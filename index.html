@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="mainpanel">
+        <input type="text" placeholder="Type message here..." id="message">
+        <div class="buttonwrapper">
+            <button onclick="start()">Send</button>
+        </div>
+        <div class="displaywrapper">
+            <p>Message converted to Binary</p>
+            <div id="output-wrapper" class="displaybox">
+            </div>
+        </div>
+        <div class="displaywrapper">
+            <div class="recievedandreset">
+                <p>Recieved Binary</p>
+                <button onclick="resetRecieved()">Reset</button>
+            </div>
+            <div class="displaybox">
+                <p id="binaryrecieved"></p>
+            </div>
+        </div>
+        <div class="displaywrapper">
+            <p>Plaintext Recieved</p>
+            <div class="displaybox">
+                <p id="textrecieved"></p>
+            </div>
+        </div>
+    </div>
+    <div class="canvasandvideo">
+        <canvas id='canvas'></canvas>
+    </div>
+    <video id='video' autoplay='true'></video>
+</body>
+<script src="script.js"></script>
+
+</html>
